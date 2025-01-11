@@ -4,12 +4,260 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>You're wrong</title>
+    <title>Your AI Judge - Resolve, Reflect, and Relate</title>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Share Tech Mono', monospace;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .card {
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 2rem;
+            margin: 2rem 0;
+            background: rgba(0, 0, 0, 0.7);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #fff, transparent);
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            flex-direction: column;
+        }
+
+        .hero-content {
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #fff;
+        }
+
+        .tagline {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            margin: 0.5rem;
+            border: 1px solid #fff;
+            background: transparent;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: #fff;
+            color: #000;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .feature-item {
+            border: 1px solid var(--border-color);
+            padding: 1.5rem;
+            border-radius: 4px;
+        }
+
+        .testimonial {
+            font-style: italic;
+            margin: 1rem 0;
+            padding: 1rem;
+            border-left: 2px solid #fff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            border-top: 1px solid var(--border-color);
+            margin-top: 4rem;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+
+        /* Add some cyberpunk details */
+        .glitch-effect {
+            animation: glitch 2s infinite;
+        }
+
+        @keyframes glitch {
+            0% {
+                transform: translate(0)
+            }
+
+            20% {
+                transform: translate(-2px, 2px)
+            }
+
+            40% {
+                transform: translate(-2px, -2px)
+            }
+
+            60% {
+                transform: translate(2px, 2px)
+            }
+
+            80% {
+                transform: translate(2px, -2px)
+            }
+
+            100% {
+                transform: translate(0)
+            }
+        }
+
+        .slideshow {
+            position: relative;
+            width: 300px;
+            height: 600px;
+            margin: 2rem auto;
+        }
+
+        .slideshow img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            object-fit: contain;
+        }
+
+        .slideshow img.active {
+            opacity: 1;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>You're wrong</h1>
-    <p>You're wrong</p>
+    <div class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="glitch-effect">YOU'RE_WRONG</h1>
+                <p class="tagline">Where AI Meets Judgments: Resolve, Reflect, and Relate</p>
+                <div>
+                    <a href="#" class="cta-button">Download on App Store</a>
+                    <a href="#" class="cta-button">Coming Soon to Android</a>
+                </div>
+            </div>
+            
+            <div class="slideshow">
+                <img src="img-1.png" alt="App Screenshot 1" class="active">
+                <img src="img-2.png" alt="App Screenshot 2">
+                <img src="img-3.png" alt="App Screenshot 3">
+                <img src="img-4.png" alt="App Screenshot 4">
+                <img src="img-5.png" alt="App Screenshot 5">
+                <img src="img-6.png" alt="App Screenshot 6">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <h2>What is YOURE WRONG?</h2>
+            <p>YOURE WRONG is the ultimate app for settling disputes, gaining relationship advice, and exploring
+                unique, real-life scenarios.</p>
+
+            <div class="features">
+                <div class="feature-item">
+                    <h3>Get Verdicts</h3>
+                    <p>Instant feedback on your scenarios</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Relationship Advice</h3>
+                    <p>Tailored guidance for your needs</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Explore Cases</h3>
+                    <p>Learn from anonymous scenarios</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional sections following the same pattern -->
+
+        <footer>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Support</a>
+            <p>© 2025 YOURE WRONG</p>
+        </footer>
+    </div>
+
+    <script>
+        const slideshow = () => {
+            const images = document.querySelectorAll('.slideshow img');
+            let currentImage = 0;
+
+            setInterval(() => {
+                images[currentImage].classList.remove('active');
+                currentImage = (currentImage + 1) % images.length;
+                images[currentImage].classList.add('active');
+            }, 3000); // Change image every 3 seconds
+        };
+
+        // Start slideshow when page loads
+        window.addEventListener('load', slideshow);
+    </script>
 </body>
 
 </html>
